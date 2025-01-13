@@ -1,0 +1,40 @@
+body {
+    background-color: hsl(216, 15%, 48%);
+}
+
+#main {
+    border: 1px solid;
+    width: 400px;
+    height: 650px;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+img {
+    width: 390px;
+    border-radius: 30px;
+    padding: 10px;
+    height: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: hsl(218, 44%, 22%);
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+    color: hsl(220, 15%, 55%);
+}
