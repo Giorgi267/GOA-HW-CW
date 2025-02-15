@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-header {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+    color: #4D4D4D;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.naw-bar {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.naw-bar button {
+    background-color: #4caf4f;
+    color: white;
+    border: none;
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 0.25em;
+    padding: 0.5em 1em;
+}
+
+.hero {
+    background-color: #F5F7FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: start;
+    gap: 1.5em;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #4D4D4D;
+}
+
+.hero-text span {
+    color: #4caf4f;
+}
+
+.hero-text p {
+    font-size: 1em;
+    color: #4D4D4D;
+}
+
+.hero-text button {
+    background-color: #4caf4f;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.hero-text img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .all-header {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .naw-bar {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .hero-text p {
+        text-align: center;
+    }
+
+    .hero-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .all-header {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 0.875em;
+    }
+
+    .hero-text button {
+        font-size: 0.875em;
+        padding: 0.5em;
+    }
+}
